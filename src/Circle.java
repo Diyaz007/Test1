@@ -2,7 +2,7 @@ public class Circle {
     private int radius;
     private static int counter = 1;
     private final double p = 3.14;
-    private static int counter_kraten3 = 1;
+    private static int counter_kraten3;
 
     public Circle(int radius) {
         this.radius = radius;
@@ -22,7 +22,9 @@ public class Circle {
 
     }
     public void kraten_3(){
-        if(getS() % 3    == 0){
+        if(getS() % 3 == 0){
+            System.out.println("------------///-------");
+            System.out.println(getS() % 3);
             counter_kraten3++;
         }
     }
